@@ -6,7 +6,7 @@
     {{user.name}} Welcome!
     <button (click)="onLogout()">Logout</button>
 </section>
-<p *ngIf="user"><img src="../assets/icons/coins.png"> Coins: {{user.coins}}</p>
+<p *ngIf="user"><img src="assets/icons/coins.png"> Coins: {{user.coins}}</p>
 <div *ngIf="bitcoinRate !== undefined">
-    <p><img src="../assets/icons/bitcoin.png"> BTC: {{ bitcoinRate }} </p>
+    <p><img src="assets/icons/bitcoin.png"> BTC: {{ bitcoinRate }} </p>
 </div>
