@@ -1,0 +1,14 @@
+.app-header{
+    display: flex;
+    height: 8vh;
+
+    nav{
+        display: flex;
+        align-items: center;
+
+        a{
+            text-decoration: none;
+            margin-right: 1rem;
+        }
+    }
+}

@@ -1,0 +1,4 @@
+<section class="contact-list">
+    <app-contact-preview (removeContact)="removeContact.emit($event)" *ngFor="let contact of contacts"
+        [contact]="contact"></app-contact-preview>
+</section>

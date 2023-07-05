@@ -1,0 +1,13 @@
+<section *ngIf="contact$ | async as contact" class="contact-details">
+    <section class="info">
+        <img src="https://robohash.org/{{contact._id}}?set=set4" alt="">
+        <div class="txt">
+            <p><b>Name:</b> {{contact.name}}</p>
+            <p><b>Email:</b> {{contact.email}}</p>
+            <p><b>phone:</b> {{contact.phone}}</p>
+        </div>
+    </section>
+    <!-- <button (click)="onShouldAdoptContact()" class="adopt-btn">Should Adopt?</button> -->
+    <button (click)="onBack()" class="back-btn">Back</button>
+    <!-- <span *ngIf="ans">{{ans}}</span> -->
+</section>

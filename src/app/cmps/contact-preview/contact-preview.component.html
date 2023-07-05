@@ -1,0 +1,15 @@
+<section class="contact-preview">
+    <section class="info">
+        <div class="contact-img">
+            <img src="https://robohash.org/{{contact._id}}?set=set4" alt="">
+        </div>
+        <p>Name: {{contact.name}}</p>
+        <a [routerLink]="['/contact', contact._id]" class="data">
+            Details
+        </a>
+    </section>
+    <section class="actions">
+        <button (click)="onRemoveContact($event)" class="remove-btn">X</button>
+        <a [routerLink]="['edit', contact._id]">Edit</a>
+    </section>
+</section>
