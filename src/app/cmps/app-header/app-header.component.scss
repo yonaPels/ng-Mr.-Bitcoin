@@ -4,11 +4,14 @@
 
     nav{
         display: flex;
-        align-items: center;
+        align-items: normal;
 
         a{
-            text-decoration: none;
-            margin-right: 1rem;
+           
+            img{
+                height: 100%;
+                padding: 1rem;
+            }
         }
     }
 }

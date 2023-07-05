@@ -1,12 +1,14 @@
-<div *ngIf="!user">
-    <input type="text" [(ngModel)]="inputValue">
-    <button (click)="inputValue && onLoggedinUser(inputValue)">Submit</button>
-</div>
-<section *ngIf="user">
-    {{user.name}} Welcome!
-    <button (click)="onLogout()">Logout</button>
+<section class="home-view">
+    <div *ngIf="!user" class="login">
+        <input type="text" [(ngModel)]="inputValue">
+        <button (click)="inputValue && onLoggedinUser(inputValue)">Submit</button>
+    </div>
+    <section *ngIf="user">
+        {{user.name}} Welcome!
+        <button (click)="onLogout()">Logout</button>
+    </section>
+    <p class="coins" *ngIf="user"><img src="assets/icons/coins.png"> Coins: {{user.coins}}</p>
+    <div *ngIf="bitcoinRate !== undefined">
+        <p class="bitcoin"><img src="assets/icons/bitcoin.png"> BTC: {{ bitcoinRate }} </p>
+    </div>
 </section>
-<p *ngIf="user"><img src="assets/icons/coins.png"> Coins: {{user.coins}}</p>
-<div *ngIf="bitcoinRate !== undefined">
-    <p><img src="assets/icons/bitcoin.png"> BTC: {{ bitcoinRate }} </p>
-</div>
